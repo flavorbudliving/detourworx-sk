@@ -388,3 +388,20 @@ footer p{margin:0}
 }
 .social-button.wip{cursor:default;opacity:.9}
 .social-button.wip:hover{color:#e8eaec;background:linear-gradient(#24282d,#121418)}
+
+.lang-switch{
+  margin-left:auto;
+  padding:6px 10px;
+  border:1px solid #aeb3b8;
+  border-right-color:#2c3035;
+  border-bottom-color:#2c3035;
+  background:linear-gradient(#d5d8db,#81878e);
+  color:#08090a;
+  font:700 9px/1 Tahoma,Verdana,sans-serif;
+  letter-spacing:.06em;
+  cursor:pointer;
+  text-shadow:0 1px rgba(255,255,255,.65);
+}
+.lang-switch:hover{background:linear-gradient(#eef0f1,#9ba1a8);color:#000}
+.lang-switch-floating{position:fixed;right:12px;top:12px;z-index:1000}
+@media(max-width:620px){.lang-switch{padding:7px 9px}}
