@@ -368,3 +368,23 @@ footer p{margin:0}
   .result-count{grid-column:1/-1;text-align:right}
   .archive-submit{display:block}.archive-submit a{display:inline-block;margin-top:12px}
 }
+
+.contact-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+.social-button{
+  display:inline-block;
+  padding:8px 10px;
+  border:1px solid #747a81;
+  border-right-color:#2d3136;
+  border-bottom-color:#2d3136;
+  background:linear-gradient(#24282d,#121418);
+  color:#e8eaec;
+  text-decoration:none;
+  font:700 10px/1 Tahoma,Verdana,sans-serif;
+}
+.social-button small{
+  margin-left:5px;
+  color:var(--red);
+  font:700 8px/1 "Courier New",monospace;
+}
+.social-button.wip{cursor:default;opacity:.9}
+.social-button.wip:hover{color:#e8eaec;background:linear-gradient(#24282d,#121418)}
