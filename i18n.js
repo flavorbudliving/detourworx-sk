@@ -57,7 +57,7 @@
     });
 
     const search=document.getElementById("linkSearch");
-    if(search) search.placeholder="Something specific?";
+    if(search) search.placeholder=lang==="en"?"Something specific?":"Niečo konkrétne?";
 
     const btn=document.querySelector(".lang-switch");
     if(btn){
