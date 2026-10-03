@@ -1,22 +1,16 @@
-# DETOUR SK
+# Detour Works SK
 
-Statický web pre **DETOUR SK**, nezávislý slovenský technologický/redakčný projekt.
+**Detour Works SK** is a new independent Slovak technology and media initiative.
 
-## Dizajnový smer
-- editoriálna, gridová typografia
-- wabi-sabi striedmosť
-- DIY dielňa / pracovný stôl / elektronika
-- systémové fonty
-- bez externých vizuálnych assetov
+The site is intentionally hand-built and lightweight: a readable modern site with visual references to late-1990s / early-2000s personal tech sites, desktop UI, hardware software packaging and DIY web culture.
 
-## Súkromie a compliance
-- bez analytiky
-- bez reklám a tracking pixelov
-- bez formulárov
-- bez newslettera
-- bez third-party SDK
-- bez externých fontov
-- bez nepovinných first-party cookies
-- viditeľný focus + skip link
-- vysoký textový kontrast
-- právne/súkromie/cookies/refundácie/vymazanie údajov v `legal.html`
+## Current site direction
+- smaller, denser typography rather than oversized landing-page headlines
+- Tahoma / Verdana / Courier-style system typography
+- compact desktop-window panels and metallic UI bars
+- black / silver / red visual system
+- honest early-stage messaging: the project is new and currently building its first work
+- no analytics, ad tracking, forms, newsletter or third-party visual SDKs
+
+## Source
+Static HTML + CSS, deployed through Vercel.
