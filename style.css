@@ -1385,3 +1385,10 @@ footer p{margin:0}
   transform:translate(1px,1px);
   box-shadow:none;
 }
+
+.archive-status-only{
+  justify-content:flex-start;
+}
+.archive-status-only .online{
+  margin:0;
+}
