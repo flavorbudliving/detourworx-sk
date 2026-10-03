@@ -146,50 +146,58 @@ input:focus-visible{
 /* ===== BRAND AREA ===== */
 .brand-row{
   display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(235px,310px);
+  grid-template-columns:minmax(0,1.65fr) minmax(250px,.9fr);
   align-items:center;
-  gap:32px;
-  min-height:164px;
-  padding:24px 28px;
-  background:
-    radial-gradient(circle at 78% 34%,rgba(240,27,45,.11),transparent 16rem),
-    linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px),
-    linear-gradient(rgba(255,255,255,.024) 1px,transparent 1px),
-    #05070a;
-  background-size:auto,24px 24px,24px 24px,auto;
-  border-bottom:1px solid #3f464e;
+  gap:0;
+  min-height:154px;
+  padding:0;
+  background:#000;
+  border-bottom:1px solid #343a41;
   box-shadow:inset 0 -1px #000;
 }
 
 .logo-link{
-  display:block;
-  max-width:550px;
+  display:flex;
+  align-items:center;
   min-width:0;
+  min-height:154px;
+  padding:20px 30px;
+  background:#000;
 }
 .logo-link img{
   display:block;
-  width:100%;
+  width:min(100%,550px);
   height:auto;
-  filter:drop-shadow(0 7px 13px rgba(0,0,0,.48));
+  filter:none;
 }
 
 .brand-note{
   position:relative;
-  padding:16px 0 16px 18px;
-  border-left:3px solid var(--red);
+  display:flex;
+  min-height:154px;
+  flex-direction:column;
+  justify-content:center;
+  padding:24px 30px 24px 28px;
+  border-left:1px solid #343a41;
+  background:#000;
   text-align:left;
   color:var(--muted);
 }
-.brand-note::after{
+.brand-note::before{
   content:"";
   position:absolute;
-  left:7px;
-  top:0;
-  bottom:0;
-  border-left:1px dotted #454d55;
+  left:-1px;
+  top:30px;
+  bottom:30px;
+  width:3px;
+  background:var(--red);
+}
+.brand-note::after{
+  content:none;
 }
 .brand-note h1{
   margin:0;
+  max-width:28ch;
   color:#fff;
   font-size:17px;
   line-height:1.38;
@@ -198,6 +206,7 @@ input:focus-visible{
 }
 .brand-note p{
   margin:9px 0 0;
+  max-width:34ch;
   color:#aab1b8;
   font:10px/1.5 "Courier New",monospace;
   letter-spacing:.045em;
@@ -921,14 +930,30 @@ footer p{margin:0}
   .chrome-line>span:last-child{display:none}
   .brand-row{
     grid-template-columns:1fr;
-    gap:16px;
+    gap:0;
+    min-height:auto;
+    padding:0;
+  }
+  .logo-link{
+    max-width:100%;
     min-height:auto;
     padding:18px;
   }
-  .logo-link{max-width:100%}
+  .logo-link img{width:100%}
   .brand-note{
-    padding:13px 0 2px 16px;
+    min-height:auto;
+    padding:18px 20px 20px;
+    border-left:0;
+    border-top:1px solid #343a41;
     text-align:left;
+  }
+  .brand-note::before{
+    left:20px;
+    right:20px;
+    top:-1px;
+    bottom:auto;
+    width:auto;
+    height:3px;
   }
   .brand-note h1{font-size:16px}
   nav a{
