@@ -1149,3 +1149,171 @@ footer p{margin:0}
 @media(max-width:700px){
   .lang-switch{min-width:auto;padding:0 13px}
 }
+
+
+/* ===== FLAT COHESION PASS: ARCHIVE HERO / PRINCIPLE / LINKS ===== */
+
+/* Principle: one flat callout, not a framed widget */
+.statement{
+  position:relative;
+  margin-top:24px;
+  padding:16px 18px 16px 20px;
+  border:0;
+  border-left:5px solid var(--red);
+  background:#080b0f;
+  box-shadow:none;
+}
+.statement::before{content:none}
+.statement-label{
+  margin-bottom:8px;
+  color:var(--red);
+}
+.statement p{
+  margin:0;
+  color:#f0f1ee;
+  font-size:13px;
+  line-height:1.62;
+}
+
+/* Archive hero: flat, continuous surface */
+.links-header{
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 120px;
+  gap:34px;
+  align-items:center;
+  padding:30px 32px;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px),
+    linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+    #000;
+  background-size:24px 24px;
+  border-bottom:1px solid #343a41;
+}
+.links-header>div:first-child{
+  padding-left:22px;
+  border-left:5px solid var(--red);
+}
+.links-header h1{
+  margin:8px 0 12px;
+  max-width:17ch;
+  color:#fff;
+  font:800 clamp(28px,4vw,42px)/1.02 Arial,Helvetica,sans-serif;
+  letter-spacing:-.035em;
+  text-transform:uppercase;
+  font-style:italic;
+}
+.links-header p{
+  max-width:760px;
+  margin:0;
+  color:#cbd0d4;
+  font-size:13.5px;
+  line-height:1.62;
+}
+.back-home{
+  color:#9fd7ff;
+}
+
+/* Replace floating silver stamp with flat technical label */
+.directory-stamp{
+  justify-self:end;
+  width:112px;
+  padding:14px 10px 12px;
+  border:0;
+  border-left:5px solid var(--red);
+  background:#090c10;
+  color:#fff;
+  text-align:left;
+  font:700 9px/1.15 Tahoma,Verdana,sans-serif;
+  text-shadow:none;
+  transform:none;
+  box-shadow:none;
+}
+.directory-stamp b{
+  display:block;
+  margin-top:2px;
+  color:#fff;
+  font-size:28px;
+  line-height:.95;
+  letter-spacing:-.04em;
+}
+.directory-stamp small{
+  display:block;
+  margin-top:6px;
+  color:#8e969e;
+  font-size:8px;
+}
+
+/* Featured archive block: same flat language as masthead */
+.featured-links-panel{
+  border-color:#5b636b #262c32 #262c32 #5b636b;
+  background:#090d11;
+  box-shadow:4px 5px 0 rgba(0,0,0,.2);
+}
+.featured-links-panel .titlebar{
+  background:linear-gradient(#d6dade,#9299a1);
+}
+.featured-links-panel .titlebar::before{
+  background:var(--red);
+  box-shadow:inset 1px 1px #ff7a84;
+}
+.archive-context{
+  margin:0 0 14px!important;
+  padding:0 0 13px;
+  border-bottom:1px dotted #4e565e;
+  color:#d3d7da!important;
+  font-size:11.5px!important;
+  line-height:1.62!important;
+}
+.featured-links-panel .archive-link{
+  display:block;
+  position:relative;
+  min-height:0;
+  padding:13px 58px 13px 14px;
+  border:0;
+  border-left:5px solid var(--red);
+  background:#05080b;
+  color:#fff;
+  font-weight:700;
+  box-shadow:none;
+}
+.featured-links-panel .archive-link::before{
+  content:"» ";
+  color:var(--red);
+}
+.featured-links-panel .archive-link::after{
+  content:"→";
+  position:absolute;
+  right:14px;
+  top:50%;
+  width:auto;
+  border:0;
+  color:var(--red);
+  font:700 18px/1 "Courier New",monospace;
+  transform:translateY(-50%);
+  opacity:1;
+}
+.featured-links-panel .archive-link small{
+  color:var(--green);
+}
+.featured-links-panel .archive-link:hover{
+  background:#11161b;
+  border-left-color:#fff;
+}
+
+/* Keep the flat archive treatment on narrow screens */
+@media(max-width:700px){
+  .links-header{
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:22px;
+  }
+  .links-header>div:first-child{
+    padding-left:16px;
+  }
+  .directory-stamp{
+    justify-self:start;
+    width:auto;
+    min-width:110px;
+  }
+}
