@@ -1357,3 +1357,31 @@ footer p{margin:0}
     transform:rotate(2deg);
   }
 }
+
+
+/* More visible back-to-main control on archive page */
+.back-home{
+  display:inline-flex;
+  align-items:center;
+  min-height:34px;
+  padding:7px 11px;
+  border:2px solid;
+  border-color:#dfe3e6 #4e555c #4e555c #dfe3e6;
+  background:linear-gradient(#d3d7da,#858c94);
+  color:#0a0b0d;
+  text-decoration:none;
+  font:700 9px/1 Tahoma,Verdana,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.035em;
+  text-shadow:0 1px #fff;
+  box-shadow:2px 2px 0 rgba(0,0,0,.18);
+}
+.back-home:hover{
+  background:linear-gradient(#f0f2f3,#9aa1a8);
+  color:#000;
+}
+.back-home:active{
+  border-color:#4e555c #dfe3e6 #dfe3e6 #4e555c;
+  transform:translate(1px,1px);
+  box-shadow:none;
+}
