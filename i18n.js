@@ -57,7 +57,7 @@
     });
 
     const search=document.getElementById("linkSearch");
-    if(search) search.placeholder=lang==="en"?"dns, pdf, linux, radio, old web...":"dns, pdf, linux, rádio, starý web...";
+    if(search) search.placeholder="Something specific?";
 
     const btn=document.querySelector(".lang-switch");
     if(btn){
