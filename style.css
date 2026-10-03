@@ -1386,9 +1386,3 @@ footer p{margin:0}
   box-shadow:none;
 }
 
-.archive-status-only{
-  justify-content:flex-start;
-}
-.archive-status-only .online{
-  margin:0;
-}
