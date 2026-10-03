@@ -1386,3 +1386,27 @@ footer p{margin:0}
   box-shadow:none;
 }
 
+
+
+/* Unify ODBOČKY accents and WIP socials */
+.route-list span,
+.route-list span:nth-child(3n+1),
+.route-list span:nth-child(3n+2),
+.route-list span:nth-child(3n){
+  border-left-color:var(--red);
+}
+
+.social-button.wip{
+  opacity:1;
+  color:#fff;
+  border-color:#ff7b86 #670008 #670008 #ff7b86;
+  background:linear-gradient(#ff4050,#b90816);
+  box-shadow:inset 1px 1px rgba(255,255,255,.16);
+}
+.social-button.wip small{
+  color:#fff;
+}
+.social-button.wip:hover{
+  color:#fff;
+  background:linear-gradient(#ff5c68,#d80b1a);
+}
